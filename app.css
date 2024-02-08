@@ -4,7 +4,7 @@ body{
     background-color: #f1f8ff;
     scroll-behavior: smooth;
 }
-
+/* styling header */
 .container{
     width: 100%;
     max-width: 90%;
@@ -125,6 +125,7 @@ header{
     }
 }
 
+/* stying cards */
 .main{
 margin-top: 200px;
 box-sizing: border-box;
@@ -174,3 +175,54 @@ box-sizing: border-box;
     font-size: 1rem;
 }
 
+
+/* adding grid */
+
+/* styling left side of the grid */
+.sectionGrid{
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 c"
+    'img3 img4 c';
+    gap: 15px;
+    margin: 100px 10px;
+}
+
+
+
+.img1 img , .img4 img{
+    width: 300px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.img2 img , .img3 img{
+    width: 200px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.sectionGrid .img1{
+    grid-area: img1;
+    justify-self: flex-end;
+    
+}
+
+.sectionGrid .img2{
+    grid-area: img2;
+    align-self: flex-end;
+}
+.sectionGrid .img3{
+    grid-area: img3;
+    justify-self: flex-end;
+   
+}
+.sectionGrid .img4 {
+    grid-area: img4;
+}
+
+.sectionGrid .gridRight{
+    grid-area: c;
+}
+
+/* styling right side of the grid */
