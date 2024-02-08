@@ -188,10 +188,8 @@ box-sizing: border-box;
     margin: 100px 10px;
 }
 
-
-
 .img1 img , .img4 img{
-    width: 300px;
+    width: 280px;
     background-size: cover;
     border-radius: 5px;
 }
@@ -204,7 +202,7 @@ box-sizing: border-box;
 
 .sectionGrid .img1{
     grid-area: img1;
-    justify-self: flex-end;
+    align-self: flex-end;
     
 }
 
@@ -219,10 +217,85 @@ box-sizing: border-box;
 }
 .sectionGrid .img4 {
     grid-area: img4;
+    
 }
 
 .sectionGrid .gridRight{
     grid-area: c;
+    padding: 0 24px;
 }
 
 /* styling right side of the grid */
+
+.decor{
+     font-family: 'Pacifico', cursive;
+     font-size: 1.5rem;
+     color: #FEA116;
+     margin: 0;
+     position: relative;
+     width: 50%;
+}
+
+.decor::after{
+    content: '';
+    width: 45px;
+    height: 2px;
+    background-color: #FEA116;
+    position: absolute;
+    top:50%;
+    right: 0;
+   left: 100px;
+   border-radius: 10px;
+}
+
+.welcome{
+    font-size: 3rem;
+    color: #0F172B;;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+}
+
+.gridRight i::after{
+    content: "\f2e7";
+    color: #FEA116;
+}
+
+.gridRight .wlc-info{
+    font-size: 1rem;
+    color: #666565;
+    margin: 0 0 20px 0;
+}
+
+.gridRight .uls{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    
+    
+}
+
+.uls .both{
+    
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: 10px solid #FEA116;
+    border-radius: 3px;
+}
+
+.both .number{
+    color: #FEA116;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.both .popularity{
+    color: #0F172B;
+    margin: 0;
+}
+.both span{
+    font-size: 1rem;
+    color: #666565;
+    letter-spacing: 1px;
+}
