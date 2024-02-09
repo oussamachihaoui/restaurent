@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family:  'Nunito Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #f1f8ff;
     scroll-behavior: smooth;
 }
@@ -227,13 +227,13 @@ box-sizing: border-box;
 
 /* styling right side of the grid */
 
-.decor{
+.menu , .decor{
      font-family: 'Pacifico', cursive;
      font-size: 1.5rem;
      color: #FEA116;
      margin: 0;
      position: relative;
-     width: 50%;
+    
 }
 
 .decor::after{
@@ -250,7 +250,7 @@ box-sizing: border-box;
 
 .welcome{
     font-size: 3rem;
-    color: #0F172B;;
+    color: #0F172B;
     margin: 0 0 20px 0;
     letter-spacing: 2px;
 }
@@ -269,7 +269,7 @@ box-sizing: border-box;
 .gridRight .uls{
     display: flex;
     justify-content: space-around;
-    margin: 50px 0;
+    margin: 80px 0;
     
     
 }
@@ -299,3 +299,53 @@ box-sizing: border-box;
     color: #666565;
     letter-spacing: 1px;
 }
+
+/* styling foods section */
+.foods {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.food .menu{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.food .foodList{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    list-style: none;
+    position: relative;
+
+}
+
+.foodList .foodNav a{
+   display: flex;
+   text-decoration: none;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+
+
+.foodNav a .divLink{
+    margin-left: 16px;
+}
+
+.foodNav i{
+    color: #FEA116;
+}
+.divLink .sml{
+    color: #666565;
+    font-size: 14px;
+}
+.divLink .heading-food{
+    margin: 0;
+    color: #0F172B;
+    font-size: 1.2rem;
+}
+
+
