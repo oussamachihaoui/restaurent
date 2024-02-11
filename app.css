@@ -10,6 +10,7 @@ body{
     max-width: 90%;
     margin: 0 auto;
     background-color: white;
+    box-sizing: border-box;
 }
 
 .orange{
@@ -111,8 +112,8 @@ header{
 }
 
 .mainHeader .right .spinImg{
-    object-fit: cover;
-    width: 93%;
+    background-size: cover;
+    width: 90%;
     animation: spin 30s linear 0.3s infinite normal ;
 }
 
@@ -304,7 +305,7 @@ box-sizing: border-box;
 .foods {
     display: flex;
     justify-content: center;
-    margin: 80px 0;
+    margin: 100px 0;
 }
 
 .food .menu{
@@ -349,3 +350,45 @@ box-sizing: border-box;
 }
 
 
+/* styling gridFoods section */
+
+.gridFoods{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4 , 25%);
+    height: 325px;
+    gap: 25px;
+    padding: 0 25px;
+    margin: 100px 0;
+    
+}
+
+.gridFood{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gridFood .gridFood-info{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid gray;
+}
+
+.gridFood-info .foodName{
+    color: #0F172B;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.gridFood-info .foodPrice{
+    color: #FEA116;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+.footer{
+    margin: 100px 0;
+}
