@@ -387,8 +387,102 @@ box-sizing: border-box;
     font-size: 1.3rem;
     font-weight: 700;
 }
-
+/* styling footer */
 
 .footer{
-    margin: 100px 0;
+    padding: 3rem;
+    background-color: #0F172B;
+    color: white;
+    margin-top: 48px;
+    text-transform: capitalize;
+}
+
+.footer .footContainer{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.footContainer .foot{
+    padding: 0 24px;
+}
+
+
+.foot .foodHead{
+    color: #FEA116;
+    font-family:"Pacifico";
+    font-size: 1.6rem;
+}
+
+
+.foot .footLink{
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin: 5px 0;
+
+}
+
+.footLink:hover{
+    text-decoration: underline;
+}
+
+
+.foot .footDays{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.foot .form{
+    position: relative;
+    width: 80%;
+}
+
+.foot .footInput{
+    padding: 20px 30px;
+    border: 1px solid #FEA116;
+    border-radius: 10px;
+   width: 80%;
+   
+}
+
+.foot .footBtn{
+    position: absolute;
+    top:12px;
+    right: 30px;
+    background-color: #FEA116;
+    padding: 8px 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+
+
+.footCopyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.footCopyright .right{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.footCopyright .linkCopyright{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    border-right: 1px solid gray;
+}
+
+.linkCopyright:hover{
+    text-decoration: underline;
 }
